@@ -9,7 +9,7 @@
 #define INIT_H
 
 int ledPin = 13;
-const int rideHeightOffset = -32; // 32 means body at 100mm off ground
+const int rideHeightOffset = -7; // 32 means body at 100mm off ground //default = -7
 
 /* Servo IDs */
 
@@ -24,7 +24,7 @@ const int LEFT_FRONT = 5;
 
 /* Body Dimensions */
 const int X_COXA = 85; // MM between front and back legs /2
-const int Y_COXA_FB = 60; // MM between front/back legs /2
+const int Y_COXA_FB = 60; // MM between front/back legs /2 //default 60 //prova con 15
 const int Y_COXA_M = 51; // MM between two middle legs /2
 const int COXA_ANGLE = 45; // Angle of coxa from straight forward (deg)
 

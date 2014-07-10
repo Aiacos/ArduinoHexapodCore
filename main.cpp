@@ -91,7 +91,7 @@ protected:
         }
     }
 
-    void movimentoServo(int j, int pAngolo) { //j è l'indice del servo
+    void movimentoServo(int j, int pAngolo) { //j √® l'indice del servo
         if (pAngolo >= 180) {
             pAngolo = 179;
             servo[j].write(pAngolo);
@@ -101,7 +101,7 @@ protected:
         } else {
             servo[j].write(pAngolo);
         }
-        delay(5);
+        //delay(5);
     } //fine movimentoServo
 public:
 };
@@ -283,37 +283,37 @@ protected:
         /* INITIAL FOOT POSITIONS */
         leg[RIGHT_FRONT].initialFootPos.x = round(sin(radians(COXA_ANGLE))*(LENGTH_COXA + LENGTH_FEMUR));
         leg[RIGHT_FRONT].initialFootPos.y = round(cos(radians(COXA_ANGLE))*(LENGTH_COXA + LENGTH_FEMUR));
-        leg[RIGHT_FRONT].initialFootPos.z = LENGTH_TIBIA - 7; // + rideHeightOffset;
+        leg[RIGHT_FRONT].initialFootPos.z = LENGTH_TIBIA + rideHeightOffset; // + rideHeightOffset;
         leg[RIGHT_FRONT].legBasePos.x = X_COXA;
         leg[RIGHT_FRONT].legBasePos.y = Y_COXA_FB;
         leg[RIGHT_FRONT].legBasePos.z = 0;
         leg[RIGHT_MIDDLE].initialFootPos.x = 0;
         leg[RIGHT_MIDDLE].initialFootPos.y = (LENGTH_COXA + LENGTH_FEMUR);
-        leg[RIGHT_MIDDLE].initialFootPos.z = LENGTH_TIBIA - 7; // + rideHeightOffset;
+        leg[RIGHT_MIDDLE].initialFootPos.z = LENGTH_TIBIA + rideHeightOffset; // + rideHeightOffset;
         leg[RIGHT_MIDDLE].legBasePos.x = 0;
         leg[RIGHT_MIDDLE].legBasePos.y = Y_COXA_M;
         leg[RIGHT_MIDDLE].legBasePos.z = 0;
         leg[RIGHT_REAR].initialFootPos.x = round(sin(radians(-COXA_ANGLE))*(LENGTH_COXA + LENGTH_FEMUR));
         leg[RIGHT_REAR].initialFootPos.y = round(cos(radians(COXA_ANGLE))*(LENGTH_COXA + LENGTH_FEMUR));
-        leg[RIGHT_REAR].initialFootPos.z = LENGTH_TIBIA - 7; // + rideHeightOffset;
+        leg[RIGHT_REAR].initialFootPos.z = LENGTH_TIBIA + rideHeightOffset; // + rideHeightOffset;
         leg[RIGHT_REAR].legBasePos.x = -X_COXA;
         leg[RIGHT_REAR].legBasePos.y = Y_COXA_FB;
         leg[RIGHT_REAR].legBasePos.z = 0;
         leg[LEFT_REAR].initialFootPos.x = round(sin(radians(-COXA_ANGLE))*(LENGTH_COXA + LENGTH_FEMUR));
         leg[LEFT_REAR].initialFootPos.y = -round(cos(radians(COXA_ANGLE))*(LENGTH_COXA + LENGTH_FEMUR));
-        leg[LEFT_REAR].initialFootPos.z = LENGTH_TIBIA - 7; // + rideHeightOffset;
+        leg[LEFT_REAR].initialFootPos.z = LENGTH_TIBIA + rideHeightOffset; // + rideHeightOffset;
         leg[LEFT_REAR].legBasePos.x = -X_COXA;
         leg[LEFT_REAR].legBasePos.y = -Y_COXA_FB;
         leg[LEFT_REAR].legBasePos.z = 0;
         leg[LEFT_MIDDLE].initialFootPos.x = 0;
         leg[LEFT_MIDDLE].initialFootPos.y = -(LENGTH_COXA + LENGTH_FEMUR);
-        leg[LEFT_MIDDLE].initialFootPos.z = LENGTH_TIBIA - 7; // + rideHeightOffset;
+        leg[LEFT_MIDDLE].initialFootPos.z = LENGTH_TIBIA + rideHeightOffset; // + rideHeightOffset;
         leg[LEFT_MIDDLE].legBasePos.x = 0;
         leg[LEFT_MIDDLE].legBasePos.y = -Y_COXA_M;
         leg[LEFT_MIDDLE].legBasePos.z = 0;
         leg[LEFT_FRONT].initialFootPos.x = round(sin(radians(COXA_ANGLE))*(LENGTH_COXA + LENGTH_FEMUR));
         leg[LEFT_FRONT].initialFootPos.y = -round(cos(radians(COXA_ANGLE))*(LENGTH_COXA + LENGTH_FEMUR));
-        leg[LEFT_FRONT].initialFootPos.z = LENGTH_TIBIA - 7; // + rideHeightOffset;
+        leg[LEFT_FRONT].initialFootPos.z = LENGTH_TIBIA + rideHeightOffset; // + rideHeightOffset;
         leg[LEFT_FRONT].legBasePos.x = X_COXA;
         leg[LEFT_FRONT].legBasePos.y = -Y_COXA_FB;
         leg[LEFT_FRONT].legBasePos.z = 0;
@@ -635,7 +635,7 @@ void setup() {
     delay(1000);
 
     Serial.begin(9600);
-    Serial1.begin(57600);
+    Serial1.begin(115200);
     ET.begin(details(commanderInput), &Serial1);
     myHexapod.walk();
     delay(500);
@@ -655,9 +655,10 @@ void loop() {
             digitalWrite(ledPin, HIGH);
             ET.receiveData();
             digitalWrite(ledPin, LOW);
-            Serial.println("Dati Ricevuti");
+            //Serial.println("Dati Ricevuti");
             //Serial.print("time after readCommandInputs(): "); Serial.println(millis()-currentTime);
             myHexapod.walk();
         }
     }
 } //end main loop()
+
