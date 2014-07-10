@@ -609,8 +609,8 @@ public:
     void walk() {
         runIK();
         //Serial.print("time after runIK(): "); Serial.println(millis()-currentTime);
-        tripodGait();
-        //myEsapodo.rippleGait();
+        //tripodGait();
+        rippleGait();
         //Serial.print("time after tripodWalk(): "); Serial.println(millis()-currentTime);
     }
 };

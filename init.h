@@ -115,8 +115,8 @@ int set[6] = {
 
 /* GAIT */
 //modifica anche in hexapod::walk()
-int caseStep[6] = {1, 3, 1, 3, 1, 3}; //for tripod gait
-//int caseStep[6] = {1,3,5,7,9,11}; //for ripple gait
+//int caseStep[6] = {1, 3, 1, 3, 1, 3}; //for tripod gait
+int caseStep[6] = {1,3,5,7,9,11}; //for ripple gait
 
 #endif
 
