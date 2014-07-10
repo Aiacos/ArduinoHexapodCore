@@ -9,19 +9,19 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=Arduino-Windows
 CND_ARTIFACT_DIR_Debug=dist/Debug/Arduino-Windows
-CND_ARTIFACT_NAME_Debug=arduinotest
-CND_ARTIFACT_PATH_Debug=dist/Debug/Arduino-Windows/arduinotest
+CND_ARTIFACT_NAME_Debug=arduinohexapodcore
+CND_ARTIFACT_PATH_Debug=dist/Debug/Arduino-Windows/arduinohexapodcore
 CND_PACKAGE_DIR_Debug=dist/Debug/Arduino-Windows/package
-CND_PACKAGE_NAME_Debug=arduinotest.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/Arduino-Windows/package/arduinotest.tar
+CND_PACKAGE_NAME_Debug=arduinohexapodcore.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/Arduino-Windows/package/arduinohexapodcore.tar
 # Release configuration
 CND_PLATFORM_Release=Arduino-Windows
 CND_ARTIFACT_DIR_Release=dist/Release/Arduino-Windows
-CND_ARTIFACT_NAME_Release=arduinotest
-CND_ARTIFACT_PATH_Release=dist/Release/Arduino-Windows/arduinotest
+CND_ARTIFACT_NAME_Release=arduinohexapodcore
+CND_ARTIFACT_PATH_Release=dist/Release/Arduino-Windows/arduinohexapodcore
 CND_PACKAGE_DIR_Release=dist/Release/Arduino-Windows/package
-CND_PACKAGE_NAME_Release=arduinotest.tar
-CND_PACKAGE_PATH_Release=dist/Release/Arduino-Windows/package/arduinotest.tar
+CND_PACKAGE_NAME_Release=arduinohexapodcore.tar
+CND_PACKAGE_PATH_Release=dist/Release/Arduino-Windows/package/arduinohexapodcore.tar
 #
 # include compiler specific variables
 #
