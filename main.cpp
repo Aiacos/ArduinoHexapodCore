@@ -432,7 +432,7 @@ public:
             Serial.print("***TICK***: ");
             Serial.println(tick);
 
-            duration = 1000; //3000ms  
+            duration = 125; //3000ms //1000 
             Serial.print("duration: ");
             Serial.println(duration);
 
