@@ -285,7 +285,7 @@ protected:
         leg[RIGHT_FRONT].initialFootPos.y = round(cos(radians(COXA_ANGLE))*(LENGTH_COXA + LENGTH_FEMUR));
         leg[RIGHT_FRONT].initialFootPos.z = LENGTH_TIBIA + rideHeightOffset; // + rideHeightOffset;
         leg[RIGHT_FRONT].legBasePos.x = X_COXA;
-        leg[RIGHT_FRONT].legBasePos.y = -Y_COXA_FB; //Y_COXA_FB;
+        leg[RIGHT_FRONT].legBasePos.y = Y_COXA_FB; //Y_COXA_FB;
         leg[RIGHT_FRONT].legBasePos.z = 0;
         leg[RIGHT_MIDDLE].initialFootPos.x = 0;
         leg[RIGHT_MIDDLE].initialFootPos.y = (LENGTH_COXA + LENGTH_FEMUR);
@@ -297,13 +297,13 @@ protected:
         leg[RIGHT_REAR].initialFootPos.y = round(cos(radians(COXA_ANGLE))*(LENGTH_COXA + LENGTH_FEMUR));
         leg[RIGHT_REAR].initialFootPos.z = LENGTH_TIBIA + rideHeightOffset; // + rideHeightOffset;
         leg[RIGHT_REAR].legBasePos.x = -X_COXA;
-        leg[RIGHT_REAR].legBasePos.y = -Y_COXA_FB; //Y_COXA_FB;
+        leg[RIGHT_REAR].legBasePos.y = Y_COXA_FB; //Y_COXA_FB;
         leg[RIGHT_REAR].legBasePos.z = 0;
         leg[LEFT_REAR].initialFootPos.x = round(sin(radians(-COXA_ANGLE))*(LENGTH_COXA + LENGTH_FEMUR));
         leg[LEFT_REAR].initialFootPos.y = -round(cos(radians(COXA_ANGLE))*(LENGTH_COXA + LENGTH_FEMUR));
         leg[LEFT_REAR].initialFootPos.z = LENGTH_TIBIA + rideHeightOffset; // + rideHeightOffset;
         leg[LEFT_REAR].legBasePos.x = -X_COXA;
-        leg[LEFT_REAR].legBasePos.y = Y_COXA_FB; //-Y_COXA_FB;
+        leg[LEFT_REAR].legBasePos.y = -Y_COXA_FB; //-Y_COXA_FB;
         leg[LEFT_REAR].legBasePos.z = 0;
         leg[LEFT_MIDDLE].initialFootPos.x = 0;
         leg[LEFT_MIDDLE].initialFootPos.y = -(LENGTH_COXA + LENGTH_FEMUR);
@@ -315,7 +315,7 @@ protected:
         leg[LEFT_FRONT].initialFootPos.y = -round(cos(radians(COXA_ANGLE))*(LENGTH_COXA + LENGTH_FEMUR));
         leg[LEFT_FRONT].initialFootPos.z = LENGTH_TIBIA + rideHeightOffset; // + rideHeightOffset;
         leg[LEFT_FRONT].legBasePos.x = X_COXA;
-        leg[LEFT_FRONT].legBasePos.y = Y_COXA_FB; //-Y_COXA_FB;
+        leg[LEFT_FRONT].legBasePos.y = -Y_COXA_FB; //-Y_COXA_FB;
         leg[LEFT_FRONT].legBasePos.z = 0;
     }
 public:
