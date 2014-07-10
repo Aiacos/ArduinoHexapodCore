@@ -32,8 +32,8 @@ ARDUINO_PINS_DIR = ${ARDUINO_BASE_DIR}/hardware/arduino/variants/mega
 # Include the libraries that you want. This are subfolders of "arduino-1.0.4/libraries" folder:
 INCLUDE_LIBS=EEPROM;Servo;
 #INCLUDE_LIBS=EEPROM;Esplora;Ethernet;Ethernet/utility;Firmata;GSMSHIELD;\
-LiquidCrystal;MemoryFree;RTClib;SD;SD/utility;Servo;SoftwareSerial;SPI;\
-Stepper;WiFi;WiFi/utility;Wire;Wire/utility;\
+#LiquidCrystal;MemoryFree;RTClib;SD;SD/utility;Servo;SoftwareSerial;SPI;\
+#Stepper;WiFi;WiFi/utility;Wire;Wire/utility;\
 
 # Select the Windows or Linux config of AVR_DUDE (upload utility):
 AVR_DUDE_WINDOWS = ${ARDUINO_BASE_DIR}/hardware/tools/avr/bin/avrdude -C ${ARDUINO_BASE_DIR}/hardware/tools/avr/etc/avrdude.conf	
