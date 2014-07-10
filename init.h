@@ -33,7 +33,7 @@ const int COXA_ANGLE = 45; // Angle of coxa from straight forward (deg)
 #define LENGTH_FEMUR 9.50
 #define LENGTH_TIBIA 12.00
 
-const int SERVO_UPDATE_PERIOD = 20; //ms
+const int SERVO_UPDATE_PERIOD = 15; //ms
 
 /* Parameters for Commander input */
 typedef struct {
