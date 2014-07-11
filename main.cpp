@@ -8,7 +8,7 @@
 #include <Servo.h>
 
 extern HardwareSerial Serial;
-extern HardwareSerial Serial1;
+extern HardwareSerial Serial1; 
 
 #include <C:\Users\Lorenzo\Dropbox\Arduino/libraries/EasyTransfer/EasyTransfer.h>
 #include <C:\Users\Lorenzo\Dropbox\Arduino/libraries/EasyTransfer/EasyTransfer.cpp>
