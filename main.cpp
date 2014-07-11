@@ -11,7 +11,7 @@ extern HardwareSerial Serial;
 extern HardwareSerial Serial1;
 
 #include <C:\Users\Lorenzo\Dropbox\Arduino/libraries/EasyTransfer/EasyTransfer.h>
-#include <C:\Users\Lorenzo\Dropbox\Arduino/libraries/EasyTransfer/EasyTransfer.cpp>
+//#include <C:\Users\Lorenzo\Dropbox\Arduino/libraries/EasyTransfer/EasyTransfer.cpp>
 #include "init.h"
 
 RECEIVE_DATA_STRUCTURE commanderInput;
