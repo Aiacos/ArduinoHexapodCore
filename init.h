@@ -25,7 +25,7 @@ const int LEFT_FRONT = 5;
 /* Body Dimensions */
 const int X_COXA = 85; // MM between front and back legs /2
 const int Y_COXA_FB = 51; // MM between front/back legs /2 //default 60 //prova con 15
-const int Y_COXA_M = 65; // MM between two middle legs /2
+const int Y_COXA_M = 63; // MM between two middle legs /2
 const int COXA_ANGLE = 45; // Angle of coxa from straight forward (deg)
 
 /* Legs */
